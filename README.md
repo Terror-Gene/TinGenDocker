@@ -1,9 +1,7 @@
-
-![french doge](https://i.imgur.com/v2JIP3D.jpg)
-
 ***~~WOW SUCH DOGE~~***
 
-> Doge NSP Updater alongside nut server brought to you by krptg
+> Doge NSP Updater alongside nut server brought to you by yongbi85
+> Almost entirely based on the work made by krptg
 
 > Everything runs in Docker, no dependency needed (except Docker)
 
@@ -32,7 +30,7 @@ docker run --name doge \
            -v $(pwd):/keys
            -v /path/to/nsp:/nsp \ 
            -p 6093:6093 \
-           krptg/doge
+           yongbi85/doge
 ```
 #### Server in detached mode with custom logins and passwords
 ```
@@ -45,7 +43,7 @@ docker run --name doge \
            -e DOGE_PASSWD=admin \ 
            -e NUT_USER=admin \ 
            -e NUT_PASSWD=admin \ 
-           krptg/doge
+           yongbi85/doge
 ```
 #### Check logs with (if in detached mode)
 ```docker logs doge```
@@ -77,3 +75,4 @@ Access the webui at ```http://<your IP>:6093``` and login as (defaults) :
 #### Credits
 + wowsuchdoge : [doge](https://github.com/wowsuchdoge/doge)
 + blawar : [nut](https://github.com/blawar/nut)
++ krptg : [krptg doge docker] (https://github.com/krptg0/doge)
