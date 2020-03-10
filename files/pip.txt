@@ -3,7 +3,9 @@ pyopenssl
 requests
 tqdm
 unidecode
+google-api-python-client
+google-auth-oauthlib
 image
 bs4
 urllib3
-flask
+Flask
