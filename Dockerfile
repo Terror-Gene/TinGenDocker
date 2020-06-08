@@ -1,4 +1,3 @@
-
 FROM python:latest
 
 RUN apt-get upgrade
@@ -12,8 +11,6 @@ RUN pip install -r pip.txt
 
 ENV PYTHONIOENCODING="UTF-8" 
 RUN git clone --depth=1 https://github.com/eXhumer/TinGen /tingen
-
-
 
 COPY files/start_tingen.sh /start_tingen.sh
 
