@@ -1,4 +1,4 @@
-***~~WOW SUCH DOGE~~***
+
 
 > Doge NSP Updater alongside nut server brought to you by yongbi85
 > Almost entirely based on the work made by krptg
@@ -68,11 +68,10 @@ Access the webui at ```http://<your IP>:6093``` and login as (defaults) :
 #### ENV variables
 + `DOGE_USER=<user>` *(Optional) - Set Doge User : default to* `doge`
 + `DOGE_PASSWD=<password>` *(Optional) - Set Doge Password : default to* `DOGE`
-+ `NUT_USER=<user>` *(Optional) - Set Nut User : default to* `AdMiN`
-+ `NUT_PASSWD=<password>` *(Optional) - Set Nut Password : default to* `nYsTIaNICHIm`
+ `NUT_USER=<user>` *(Optional) - Set Nut User : default to* `AdMiN`
 
----
+
+
 #### Credits
-+ wowsuchdoge : [doge](https://github.com/wowsuchdoge/doge)
-+ blawar : [nut](https://github.com/blawar/nut)
-+ krptg : [krptg doge docker] (https://github.com/krptg0/doge)
++  eXhumer [TinGen](https://github.com/eXhumer/TinGen) 
+
