@@ -1,11 +1,6 @@
-colorama
-pyopenssl
-requests
 tqdm
-unidecode
+pycryptodome
 google-api-python-client
+google-auth-httplib2
 google-auth-oauthlib
-image
-bs4
-urllib3
-Flask
+zstandard
