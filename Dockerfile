@@ -1,6 +1,4 @@
-FROM lsiobase/alpine:3.9
-
-# TODO: We're including the entire LSIO python command since we still need the build-dependencies packages to compile hactool if it ever gets used again. Also, this way we use the multi-arch docker images that Linux Server makes, but with python3.
+FROM lsiobase/alpine:latest
 
 RUN echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
@@ -80,10 +78,6 @@ COPY files/pip.txt pip.txt
 RUN  pip install -r /pip.txt
 
 ENV PYTHONIOENCODING="UTF-8" 
-RUN git clone --depth=1 https://github.com/yongbi85/doge /doge && git clone --depth=1 https://github.com/blawar/nut /doge/nut
-COPY files/nut.conf /doge/nut/conf/nut.conf
-COPY files/doge.config.json /doge/doge.config.json
-COPY files/start_doge.sh /start_doge.sh
-COPY files/users.conf /doge/nut/conf/users.conf
+RUN git clone --depth=1 https://github.com/eXhumer/TinGen /tingen
 
 ENTRYPOINT ["/bin/sh","start_doge.sh"]
