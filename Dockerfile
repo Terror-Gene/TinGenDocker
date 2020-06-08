@@ -80,4 +80,6 @@ RUN  pip install -r /pip.txt
 ENV PYTHONIOENCODING="UTF-8" 
 RUN git clone --depth=1 https://github.com/eXhumer/TinGen /tingen
 
+COPY files/credentials.json /tingen/credentials.json
+
 ENTRYPOINT ["/bin/sh","start_doge.sh"]
