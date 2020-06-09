@@ -9,6 +9,7 @@ I will detail later but you will need to generate your own gdrive.token previous
 +  CREDENTIALS_PATH : Path to your credentials.json file as seen by your container
 +  TOKEN_PATH : Path to your gdrive.token file as seen by your container
 +  INDEX_FILE_PATH : Path to where you want the index.tfl file to be stored locally as seen by your container
++  SUCCESS : (Optionnal) The message displayed on tinfoil upon loading the index file
 +  OPT_ARGS : (Optionnal) list of optionnal arguments you want to add
 
 ```
