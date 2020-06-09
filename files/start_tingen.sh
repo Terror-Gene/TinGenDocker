@@ -39,7 +39,7 @@ exit 1
 fi
 
 if [ -n "${OPT_ARGS}" ]; then
-python TinGen.py ${OPT_ARGS} --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --success "Custom Index loaded successfully" --add-non-nsw-files --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+python TinGen.py ${OPT_ARGS} --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
 else
-python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --success "Custom Index loaded successfully" --add-non-nsw-files --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
 fi
