@@ -11,7 +11,7 @@ I will detail later but you will need to generate your own gdrive.token previous
 +  INDEX_FILE_PATH : Path to where you want the index.tfl file to be stored locally as seen by your container
 +  OPT_ARGS : (Optionnal) list of optionnal arguments you want to add
 
-optional arguments:
+```
   --share-files         Share files all files inside the index file
   --no-recursion        Scans for files only in top directory for each folder ID entered
   --add-nsw-files-without-title-id
@@ -31,6 +31,7 @@ optional arguments:
   --zlib                Compresses index with Zlib compression method
   --no-compress         Flag to not compress index
 
+```
 
 #### Credits
 +  eXhumer [TinGen](https://github.com/eXhumer/TinGen)
