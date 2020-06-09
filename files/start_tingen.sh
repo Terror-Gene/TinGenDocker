@@ -38,4 +38,4 @@ echo "YOU MUST SET FOLDER_ID_TO_SCAN ENVIRONMENT VARIABLE TO THE GDRIVE FOLDER I
 exit 1
 fi
 
-python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --success "Custom Index loaded successfully" --add-non-nsw-files --upload-to-folder_id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --success "Custom Index loaded successfully" --add-non-nsw-files --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
