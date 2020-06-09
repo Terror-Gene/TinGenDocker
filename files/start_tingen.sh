@@ -50,4 +50,5 @@ else
   else
     python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
   fi
+fi
   
