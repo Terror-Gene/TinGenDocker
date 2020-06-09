@@ -39,7 +39,15 @@ exit 1
 fi
 
 if [ -n "${OPT_ARGS}" ]; then
-python TinGen.py ${OPT_ARGS} --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+  if [ -n "${SUCCESS}" ]; then
+    python TinGen.py ${OPT_ARGS} --success "${SUCCESS}" --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+  else
+    python TinGen.py ${OPT_ARGS} --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+  fi
 else
-python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
-fi
+  if [ -n "${SUCCESS}" ]; then
+    python TinGen.py --success "${SUCCESS}" --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+  else
+    python TinGen.py --headless --credentials ${CREDENTIALS_PATH} --token ${TOKEN_PATH} --index-file ${INDEX_FILE_PATH} --upload-to-folder-id ${FOLDER_ID_TO_UPLOAD_TO} ${FOLDER_ID_TO_SCAN}
+  fi
+  
